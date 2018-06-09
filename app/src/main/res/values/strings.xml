@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">TB561Test</string>
+
+    <string-array name="bios_Select">
+        <item>APP</item>
+        <item>HardWare(nonsupport)</item>
+    </string-array>
+
+
+    <string-array name="baudrates_value">
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+    </string-array>
+
+    <string-array name="powerOn_display">
+        <item>3s</item>
+        <item>10s</item>
+        <item>30s</item>
+        <item>1min</item>
+        <item>3min</item>
+        <item>5min</item>
+        <item>10min</item>
+        <item>30min</item>
+        <item>1h</item>
+        <item>1.5h</item>
+        <item>2h</item>
+        <item>2.5h</item>
+        <item>3h</item>
+        <item>3.5h</item>
+        <item>4h</item>
+        <item>4.5h</item>
+    </string-array>
+    <string-array name="powerOn_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="powerOff_display">
+        <item>3s</item>
+        <item>10s</item>
+        <item>30s</item>
+        <item>1min</item>
+        <item>5min</item>
+        <item>10min</item>
+        <item>15min</item>
+        <item>30min</item>
+        <item>1h</item>
+        <item>2h</item>
+        <item>5h</item>
+        <item>10h</item>
+        <item>15h</item>
+        <item>18h</item>
+        <item>24h</item>
+        <item>48h</item>
+    </string-array>
+
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+
+</resources>

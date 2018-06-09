@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/volMainTitle"
+            android:text="Set Voltage Protect"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/voltitle"
+                android:text="Input Voltage:"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputVal_id"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="0"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:text="V"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/volmaxTitle"
+                android:text="Set Vol Max:"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/volMaxID"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textCursorDrawable="@null"
+                android:maxLength="5"
+                android:text="0"/>
+            <!--android:textStyle="normal"-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:text="V"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@id/volmaxTitle"
+                android:id="@+id/volminTitle"
+                android:text="Set Vol Min:"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textCursorDrawable="@null"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:id="@+id/volMinVal"
+                android:text="0"/>
+            <!--android:textCursorDrawable="@null"-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:text="V"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set"
+            android:id="@+id/volSetID"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/mediumblue"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/volTitle"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Bios Set:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            <!--<Spinner-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:entries="@array/bios_Select"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:id="@+id/biosSelectID">-->
+
+            <!--</Spinner>-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/biosSelectID"
+                android:textSize="20sp"
+                android:text=""/>
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Set"-->
+                <!--android:id="@+id/biosSetID"/>-->
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mediumblue"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Power On Delay Time: "/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--<EditText-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/delayOnID"-->
+                    <!--android:textCursorDrawable="@null"-->
+                    <!--android:text="0"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="s"/>-->
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:entries="@array/powerOn_display"
+                    android:id="@+id/delayOnID">
+                </Spinner>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Set"
+                    android:id="@+id/delayOnSetID"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="Power Off Delay Time: "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--<EditText-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/delayOffID"-->
+                    <!--android:text="0"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="s"/>-->
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:entries="@array/powerOff_display"
+                    android:id="@+id/delayOffID">
+                </Spinner>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Set"
+                    android:id="@+id/delayOffSetID"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
